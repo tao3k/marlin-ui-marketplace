@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "marketplace_id": "tao3k.marlin-official",
-  "canonical_repo": "https://github.com/tao3k/marlin-marketplace",
+  "marketplace_id": "tao3k.marlin-ui-official",
+  "canonical_repo": "https://github.com/tao3k/marlin-ui-marketplace",
   "signing_policy": "official-ci-ed25519-only",
   "categories": [
     "ai-workflows",

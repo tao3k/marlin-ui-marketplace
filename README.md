@@ -4,9 +4,9 @@ SPDX-FileCopyrightText: 2026 tao3k team and Contributors
 SPDX-License-Identifier: Apache-2.0 AND LGPL-2.1-or-later
 -->
 
-# Marlin Official Marketplace (`tao3k/marlin-marketplace`)
+# Marlin UI Official Marketplace (`tao3k/marlin-ui-marketplace`)
 
-The official, community-open registry for **Marlin** plugins, curated 34-token themes, and shareable Emacs composable workspace layouts across Desktop (macOS / Linux / Windows), iOS, Android, and Web.
+The official, community-open UI registry for **Marlin** UI plugins, curated 34-token themes, and shareable Emacs composable workspace layouts across Desktop (macOS / Linux / Windows), iOS, Android, and Web.
 
 ## What Lives Here
 

@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2026 tao3k team and Contributors
 SPDX-License-Identifier: Apache-2.0 AND LGPL-2.1-or-later
 -->
 
-# Contributing to Marlin Official Marketplace
+# Contributing to Marlin UI Official Marketplace
 
 We welcome high-quality **Plugins**, **Themes**, and **Emacs Workspace Layouts** from both official maintainers and community authors!
 
