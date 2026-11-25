@@ -1,0 +1,14 @@
+schema_version = 1
+id = "tao3k.theme-paper-light"
+name = "Paper Light"
+appearance = "light"
+
+[palette]
+canvas = "#f6f7fa"
+bar = "#ffffff"
+ink = "#141822"
+accent = "#5848dc"
+info = "#2563eb"
+success = "#16a34a"
+warning = "#d97706"
+muted = "#606a7c"

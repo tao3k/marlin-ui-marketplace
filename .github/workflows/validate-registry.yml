@@ -1,0 +1,64 @@
+# SPDX-FileCopyrightText: 2026 tao3k team and Contributors
+#
+# SPDX-License-Identifier: Apache-2.0 AND LGPL-2.1-or-later
+
+name: Validate Official Marketplace Registry
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-registry:
+    name: Registry Schema, Supply-Chain & Asset Gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate registry.json, TOML themes, and JSON layouts
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, re, sys, tomllib
+
+          root = pathlib.Path(".")
+          reg = json.loads((root / "registry.json").read_text(encoding="utf-8"))
+          assert reg["schema_version"] == 1
+          assert reg["canonical_repo"].startswith("https://")
+          cats = set(reg["categories"])
+          restricted = {"approval.gate", "host.auth", "host.secrets"}
+          sha_re = re.compile(r"^[0-9a-fA-F]{40}$")
+          seen = set()
+
+          for p in reg["plugins"]:
+              assert p["id"] not in seen, f"duplicate plugin {p['id']}"
+              seen.add(p["id"])
+              assert p["category"] in cats, f"invalid category {p['category']}"
+              assert p["slot_id"] not in restricted, f"restricted slot {p['slot_id']}"
+              assert p["repository"].startswith("https://"), f"non-HTTPS repo for {p['id']}"
+              assert sha_re.match(p["commit_sha"]), f"unpinned commit_sha for {p['id']}"
+
+          for th in reg.get("themes", []):
+              p = root / th["local_path"]
+              data = tomllib.loads(p.read_text(encoding="utf-8"))
+              assert data["id"] == th["id"], f"theme id mismatch in {p}"
+              assert len(data["palette"]) == 8, f"expected 8 semantic colors in {p}"
+
+          for ly in reg.get("layouts", []):
+              p = root / ly["local_path"]
+              data = json.loads(p.read_text(encoding="utf-8"))
+              assert data["perspective"] == ly["perspective"], f"layout perspective mismatch in {p}"
+              assert "root" in data
+
+          print(f"OK: validated {len(reg['plugins'])} plugins, {len(reg.get('themes', []))} themes, {len(reg.get('layouts', []))} layouts")
+          PY
+
+  reuse:
+    name: REUSE SPDX License Compliance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: fsfe/reuse-action@v5

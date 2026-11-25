@@ -1,0 +1,17 @@
+{
+  "perspective": "focus",
+  "root": {
+    "axis": "column",
+    "ratio": 0.78,
+    "first": {
+      "bufferId": "slot:workbench.main",
+      "title": "Workspace Panel",
+      "kind": "webview"
+    },
+    "second": {
+      "bufferId": "slot:workbench.inspector",
+      "title": "Focus Clock",
+      "kind": "wasm-gpu"
+    }
+  }
+}

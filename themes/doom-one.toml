@@ -1,0 +1,14 @@
+schema_version = 1
+id = "tao3k.theme-doom-one"
+name = "Doom One"
+appearance = "dark"
+
+[palette]
+canvas = "#21242b"
+bar = "#282c34"
+ink = "#dcdfe4"
+accent = "#51afef"
+info = "#c678dd"
+success = "#98be65"
+warning = "#ecbe7b"
+muted = "#8a93a2"

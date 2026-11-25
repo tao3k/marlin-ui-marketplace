@@ -1,0 +1,26 @@
+{
+  "perspective": "cockpit",
+  "root": {
+    "axis": "row",
+    "ratio": 0.62,
+    "first": {
+      "bufferId": "slot:workbench.main",
+      "title": "Workspace Panel",
+      "kind": "webview"
+    },
+    "second": {
+      "axis": "column",
+      "ratio": 0.66,
+      "first": {
+        "bufferId": "builtin:transcript",
+        "title": "AI Transcript",
+        "kind": "native-gpu"
+      },
+      "second": {
+        "bufferId": "slot:workbench.inspector",
+        "title": "Focus Clock",
+        "kind": "wasm-gpu"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+schema_version = 1
+id = "tao3k.theme-tokyo-night"
+name = "Tokyo Night"
+appearance = "dark"
+
+[palette]
+canvas = "#16161e"
+bar = "#1a1b26"
+ink = "#c0caf5"
+accent = "#7aa2f7"
+info = "#7dcfff"
+success = "#9ece6a"
+warning = "#e0af68"
+muted = "#848dad"

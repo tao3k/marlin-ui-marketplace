@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "marketplace_id": "tao3k.marlin-official",
+  "canonical_repo": "https://github.com/tao3k/marlin-marketplace",
+  "signing_policy": "official-ci-ed25519-only",
+  "categories": [
+    "ai-workflows",
+    "developer-tools",
+    "productivity",
+    "system-dock",
+    "mobile-packs"
+  ],
+  "plugins": [
+    {
+      "id": "tao3k.org-agenda-planner",
+      "name": "Org Agenda & AI Daily Planner",
+      "category": "productivity",
+      "runtime": "webview-untrusted",
+      "slot_id": "workbench.main",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/ts-org-agenda-planner",
+      "summary": "React 19 Org-mode daily planner, time-block overlap detection, and orgize-wasm capture."
+    },
+    {
+      "id": "tao3k.ai-memory-inbox",
+      "name": "AI Memory & Knowledge Triage Inbox",
+      "category": "ai-workflows",
+      "runtime": "webview-untrusted",
+      "slot_id": "workbench.main",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/react-ai-memory-inbox",
+      "summary": "React 19 AI knowledge triage inbox with datetree capture and semantic severity ranking."
+    },
+    {
+      "id": "tao3k.ai-workflow-cockpit",
+      "name": "Multi-Agent AI Workflow Cockpit",
+      "category": "ai-workflows",
+      "runtime": "webview-untrusted",
+      "slot_id": "workbench.main",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/react-ai-workflow-cockpit",
+      "summary": "React 19 multi-agent graph execution cockpit with live token metrics and Tier-0 gate badges."
+    },
+    {
+      "id": "tao3k.focus-clock-reactor",
+      "name": "Focus Clock GPU Dock",
+      "category": "system-dock",
+      "runtime": "wasm-ui-ir",
+      "slot_id": "workbench.inspector",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/go-focus-clock-reactor",
+      "summary": "Zero-WebView Go 1.27 WASI reactor rendering a 120Hz native GPU Pomodoro & Org clock dock."
+    },
+    {
+      "id": "tao3k.daily-planner-pack",
+      "name": "Daily Planner Declarative OTA Pack",
+      "category": "mobile-packs",
+      "runtime": "declarative",
+      "slot_id": "workbench.inspector",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/declarative-daily-planner-pack",
+      "summary": "App Store 2.5.2-compliant declarative OTA pack for iOS, Android, Desktop, and Web."
+    },
+    {
+      "id": "tao3k.org-kanban",
+      "name": "Org-Mode Kanban Board",
+      "category": "productivity",
+      "runtime": "webview-untrusted",
+      "slot_id": "workbench.main",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/ts-org-kanban",
+      "summary": "Lightweight zero-dependency TypeScript Org-mode Kanban board panel."
+    },
+    {
+      "id": "tao3k.session-radar",
+      "name": "Session Radar",
+      "category": "developer-tools",
+      "runtime": "webview-untrusted",
+      "slot_id": "workbench.main",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/ts-session-radar",
+      "summary": "Multi-machine session telemetry radar across local, remote GPU, and mobile targets."
+    },
+    {
+      "id": "tao3k.graph-inspector",
+      "name": "Graph Execution Inspector (WASI)",
+      "category": "developer-tools",
+      "runtime": "wasm-ui-ir",
+      "slot_id": "workbench.inspector",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/go-graph-inspector-reactor",
+      "summary": "Resident Go WASI reactor inspecting graph-loop topology and typed node receipts."
+    },
+    {
+      "id": "tao3k.ios-personal-capture",
+      "name": "Mobile Personal Capture Overlay",
+      "category": "mobile-packs",
+      "runtime": "declarative",
+      "slot_id": "workbench.inspector",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "repository": "https://github.com/tao3k/marlin-mygo",
+      "commit_sha": "501c10a42bcafbbd587fe87bd4eae912b3c8f070",
+      "subdir": "examples/plugins/ios-personal-overlay",
+      "summary": "Declarative mobile capture overlay pack synced over mTLS with Desktop Studio."
+    }
+  ],
+  "themes": [
+    {
+      "id": "tao3k.theme-midnight",
+      "name": "Midnight",
+      "appearance": "dark",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "local_path": "themes/midnight.toml",
+      "summary": "Default Midnight Graphite & Indigo semantic palette (WCAG AA+ 34-token projection)."
+    },
+    {
+      "id": "tao3k.theme-paper-light",
+      "name": "Paper Light",
+      "appearance": "light",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "local_path": "themes/paper-light.toml",
+      "summary": "Crisp Paper-Snow & Cobalt light theme inspired by Apple HIG surfaces."
+    },
+    {
+      "id": "tao3k.theme-doom-one",
+      "name": "Doom One",
+      "appearance": "dark",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "local_path": "themes/doom-one.toml",
+      "summary": "Iconic Emacs Doom One semantic face & modeline palette."
+    },
+    {
+      "id": "tao3k.theme-tokyo-night",
+      "name": "Tokyo Night",
+      "appearance": "dark",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "local_path": "themes/tokyo-night.toml",
+      "summary": "Deep indigo Tokyo Night Storm palette tuned for long coding sessions."
+    },
+    {
+      "id": "tao3k.theme-catppuccin",
+      "name": "Catppuccin",
+      "appearance": "dark",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "local_path": "themes/catppuccin.toml",
+      "summary": "Warm Catppuccin Mocha pastel semantic theme across GPU chrome and WebView panels."
+    }
+  ],
+  "layouts": [
+    {
+      "id": "tao3k.layout-cockpit",
+      "name": "AI Engineering Cockpit",
+      "perspective": "cockpit",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "local_path": "layouts/cockpit.json",
+      "summary": "3-pane Emacs layout combining Workspace Panel, AI Transcript, and WASI Focus Clock."
+    },
+    {
+      "id": "tao3k.layout-focus",
+      "name": "Deep Focus",
+      "perspective": "focus",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "local_path": "layouts/focus.json",
+      "summary": "Clean 2-pane workspace pairing primary plugin with resident GPU dock."
+    }
+  ]
+}
