@@ -1,0 +1,26 @@
+{
+  "perspective": "review",
+  "root": {
+    "axis": "row",
+    "ratio": 0.56,
+    "first": {
+      "bufferId": "slot:workbench.main",
+      "title": "Workspace Panel",
+      "kind": "webview"
+    },
+    "second": {
+      "axis": "column",
+      "ratio": 0.52,
+      "first": {
+        "bufferId": "builtin:projection",
+        "title": "Projection Inspector",
+        "kind": "native-gpu"
+      },
+      "second": {
+        "bufferId": "builtin:transcript",
+        "title": "AI Transcript",
+        "kind": "native-gpu"
+      }
+    }
+  }
+}

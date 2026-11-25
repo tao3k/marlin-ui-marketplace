@@ -1,0 +1,14 @@
+schema_version = 1
+id = "tao3k.theme-nord-polar"
+name = "Nord Polar"
+appearance = "dark"
+
+[palette]
+canvas = "#2e3440"
+bar = "#3b4252"
+ink = "#eceff4"
+accent = "#88c0d0"
+info = "#81a1c1"
+success = "#a3be8c"
+warning = "#ebcb8b"
+muted = "#7b88a1"

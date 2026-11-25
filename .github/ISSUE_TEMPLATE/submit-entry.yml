@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2026 tao3k team and Contributors
+#
+# SPDX-License-Identifier: Apache-2.0 AND LGPL-2.1-or-later
+
+name: Submit to Official Marlin UI Marketplace
+description: Propose a new UI Plugin (e.g. Git UI, GitHub UI), Theme Pack, or Emacs Workspace Layout
+title: "[Submission] "
+labels: ["marketplace-submission"]
+body:
+  - type: dropdown
+    id: stream
+    attributes:
+      label: Marketplace Stream
+      options:
+        - UI Plugin (TypeScript/React WebView, Go WASI Reactor, or Declarative Pack)
+        - Theme Pack (8-color semantic TOML)
+        - Emacs Workspace Layout (LayoutSpec JSON)
+    validations:
+      required: true
+  - type: input
+    id: entry_id
+    attributes:
+      label: Proposed Entry ID
+      placeholder: "yourname.git-workbench"
+    validations:
+      required: true
+  - type: input
+    id: repo_url
+    attributes:
+      label: Public HTTPS Repository URL
+      placeholder: "https://github.com/yourname/marlin-git-workbench"
+    validations:
+      required: true
+  - type: input
+    id: commit_sha
+    attributes:
+      label: Pinned 40-Character Git Commit SHA (required for plugins)
+      placeholder: "0123456789abcdef0123456789abcdef01234567"
+    validations:
+      required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: Description & Permissions Summary
+      description: Explain what your plugin/theme/layout does, which host read_scopes / declared_actions it uses, and include a screenshot if applicable.
+    validations:
+      required: true
