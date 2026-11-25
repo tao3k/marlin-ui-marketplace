@@ -137,7 +137,7 @@
       "trust_tier": "official",
       "publisher_id": "tao3k.official",
       "repository": "https://github.com/tao3k/marlin-mygo",
-      "commit_sha": "194807e3b3e3ab9c03b5e266de2482561506094b",
+      "commit_sha": "af517f6ac0e7bee9923cd4353c1932882f886134",
       "subdir": "examples/plugins/react-git-workbench",
       "summary": "React 19 Git status, branch switching, hunk triage, and policy-gated commit workbench."
     },
@@ -150,7 +150,7 @@
       "trust_tier": "official",
       "publisher_id": "tao3k.official",
       "repository": "https://github.com/tao3k/marlin-mygo",
-      "commit_sha": "194807e3b3e3ab9c03b5e266de2482561506094b",
+      "commit_sha": "af517f6ac0e7bee9923cd4353c1932882f886134",
       "subdir": "examples/plugins/react-github-workbench",
       "summary": "React 19 GitHub Pull Requests, Issues, and Actions CI status workbench with action-gated reviews."
     }
@@ -238,6 +238,15 @@
       "publisher_id": "tao3k.official",
       "local_path": "layouts/review-triage.json",
       "summary": "3-pane review studio pairing Workspace Panel, Projection Inspector, and AI Transcript."
+    },
+    {
+      "id": "tao3k.layout-dev-git-github",
+      "name": "Git + GitHub Composable Studio",
+      "perspective": "dev-git-github",
+      "trust_tier": "official",
+      "publisher_id": "tao3k.official",
+      "local_path": "layouts/dev-git-github.json",
+      "summary": "4-pane composable studio pairing Git Workbench, GitHub Workbench, AI Transcript, and WASI Focus Clock."
     }
   ]
 }

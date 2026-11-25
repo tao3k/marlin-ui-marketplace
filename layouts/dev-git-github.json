@@ -1,0 +1,35 @@
+{
+  "perspective": "dev-git-github",
+  "root": {
+    "axis": "row",
+    "ratio": 0.58,
+    "first": {
+      "axis": "column",
+      "ratio": 0.50,
+      "first": {
+        "bufferId": "slot:workbench.main",
+        "title": "Git Workbench",
+        "kind": "webview"
+      },
+      "second": {
+        "bufferId": "slot:workbench.secondary",
+        "title": "GitHub Workbench",
+        "kind": "webview"
+      }
+    },
+    "second": {
+      "axis": "column",
+      "ratio": 0.65,
+      "first": {
+        "bufferId": "builtin:transcript",
+        "title": "AI Transcript",
+        "kind": "native-gpu"
+      },
+      "second": {
+        "bufferId": "slot:workbench.inspector",
+        "title": "Focus Clock",
+        "kind": "wasm-gpu"
+      }
+    }
+  }
+}
